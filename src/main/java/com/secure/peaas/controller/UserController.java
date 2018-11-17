@@ -1,4 +1,4 @@
-package com.secure.peaas;
+package com.secure.peaas.controller;
 
 import com.secure.peaas.entity.User;
 import com.secure.peaas.service.UserDao;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/users/")
 public class UserController {
 
   @Autowired

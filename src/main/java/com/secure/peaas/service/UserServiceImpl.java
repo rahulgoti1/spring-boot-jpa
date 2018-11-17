@@ -49,7 +49,6 @@ public class UserServiceImpl implements UserDao {
   public User updatePartially(User user, long id) {
     Optional<User> oneUser = userRepository.findById(id);
     oneUser.ifPresent(user1 -> user.setEmail(user1.getEmail()));
-    userRepository.save(user);
-    return null;
+    return userRepository.save(user);
   }
 }

@@ -12,7 +12,7 @@ import lombok.Data;
  */
 @Entity
 @Data
-public class User {
+public class User extends AuditModel {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
