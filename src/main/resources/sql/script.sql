@@ -1,0 +1,3 @@
+CREATE SCHEMA peaas;
+SHOW TABLES;
+SELECT * FROM peaas.user;

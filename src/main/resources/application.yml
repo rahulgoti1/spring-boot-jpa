@@ -1,0 +1,20 @@
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/peaas
+  devtools:
+    restart:
+      enabled: true
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: debug
+debug: false # to generate auto-configuration report
